@@ -3,11 +3,23 @@ document.getElementById('SwitchLang').addEventListener('click', function() {
 });
 const en={
     "Studies":"BASc Electrical Engineering and BSc Computing Technology student",
-    "SwitchLang": "FR"
+    "SwitchLang": "FR",
+    "TitleProjects":"Projects",
+    "PersoProjMenu":"Personal projects",
+    "CoopProjMenu":"Cooperative projects",
+    "CEGProj":"Final CÉGEP project",
+    "Model":"3D modeling",
+    "Creal":"Creation club"
 }
 const fr={
     "Studies":"Étudiant en B.Sc.A. Génie électrique et B.Sc. Technologie de l'informatique",
-    "SwitchLang": "EN" 
+    "SwitchLang": "EN",
+    "TitleProjects":"Projets",
+    "PersoProjMenu":"Projets personnels",
+    "CoopProjMenu":"Projets coopératifs",
+    "CEGProj":"Projet final CÉGEP",
+    "Model":"Modélisation 3D",
+    "Creal": "Club de création" 
 }
 
 function switchLanguage(){

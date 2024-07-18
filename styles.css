@@ -7,3 +7,6 @@ body{
 	top:1pc;
 	right:1pc;
 }
+th, td{
+	border: 1px solid black;
+}
