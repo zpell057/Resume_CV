@@ -1,0 +1,9 @@
+body{
+	background-color: gray;
+
+}
+#SwitchLang{
+	position: fixed;
+	top:1pc;
+	right:1pc;
+}
