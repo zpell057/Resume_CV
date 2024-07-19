@@ -7,6 +7,12 @@ body{
 	top:1pc;
 	right:1pc;
 }
+#smaffer{
+	display: inline;
+}
+#vga{
+	display: inline;
+}
 th, td{
 	border: 1px solid black;
 }
