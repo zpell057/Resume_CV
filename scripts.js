@@ -11,7 +11,9 @@ const en={
     "Model":"3D modeling",
     "Creal":"Creation club",
     "GameinWatch":"Game & Watch-type game",
-    "vga":"VGA animation using "
+    "vga":"VGA animation using ",
+    "soundTrap":"Audio message player using an SD card reader, a small speaker and a switch",
+    "v":"Arithmetic practice Android app developped in Java using Android Studio"
 }
 const fr={
     "Studies":"Étudiant en B.Sc.A. Génie électrique et B.Sc. Technologie de l'informatique",
@@ -23,7 +25,9 @@ const fr={
     "Model":"Modélisation 3D",
     "Creal": "Club de création" ,
     "GameinWatch":"Jeu de type Game & Watch",
-    "vga":"Animation VGA avec "
+    "vga":"Animation VGA avec ",
+    "soundTrap":"Lecteur de message audio activé par un interrupteur utilisant un lecteur de carte SD et un haut-parleur miniature",
+    "v":"Application Andoid de pratique arithmétique réalisée sur Android Studio"
 }
 
 function switchLanguage(){

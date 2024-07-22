@@ -8,7 +8,7 @@ body{
 	right:1pc;
 }
 #smaffer{
-	display: inline;
+	display: inline;/*Useless ?*/
 }
 #vga{
 	display: inline;
