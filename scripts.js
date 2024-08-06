@@ -13,7 +13,10 @@ const en={
     "GameinWatch":"Game & Watch-type game",
     "vga":"VGA animation using ",
     "soundTrap":"Audio message player using an SD card reader, a small speaker and a switch",
-    "v":"Arithmetic practice Android app developped in Java using Android Studio"
+    "appDesc":"Arithmetic practice Android app developped in Java using Android Studio",
+    "chartsDesc1":"Series of python programs made to edit a video compilation of all #1 songs on the canadian charts in a given decade. The data of what songs were #1 during what time was scraped off of wikipedia using ",
+    "chartsDesc2":"to then be searched and downloaded from Youtube using google cloud's Youtube Data API v3 and ",
+    "chartsDesc3":"The final video was then created by editing 10 second clips from each video and adding text showing info about the song with"
 }
 const fr={
     "Studies":"Étudiant en B.Sc.A. Génie électrique et B.Sc. Technologie de l'informatique",
@@ -27,7 +30,10 @@ const fr={
     "GameinWatch":"Jeu de type Game & Watch",
     "vga":"Animation VGA avec ",
     "soundTrap":"Lecteur de message audio activé par un interrupteur utilisant un lecteur de carte SD et un haut-parleur miniature",
-    "v":"Application Andoid de pratique arithmétique réalisée sur Android Studio"
+    "appDesc":"Application Andoid de pratique arithmétique réalisée sur Android Studio",
+    "chartsDesc1":"Série de programmes python qui réalisent une compilation de tous les chansons #1 aux charts canadiennes pour une décennie données. L'information sur quelles chansons étaient #1 a été obtenue sur Wikipedia avec",
+    "chartsDesc2":"pour ensuite rechercher et télécharger ces chansons sur youtube avec l'API Youtube Data API v3 de google cloud et",
+    "chartsDesc3":". La vidéo finale a été créée en montant des segments de 10 secondes de chaque vidéo et en ajoutant du texte avec l'information sur la chanson à l'aide de "
 }
 
 function switchLanguage(){

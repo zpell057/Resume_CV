@@ -7,11 +7,12 @@ body{
 	top:1pc;
 	right:1pc;
 }
-#smaffer{
-	display: inline;/*Useless ?*/
-}
+
 #vga{
 	display: inline;
+}
+.chartsDesc{
+	display:inline;
 }
 th, td{
 	border: 1px solid black;
