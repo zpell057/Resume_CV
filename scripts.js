@@ -1,15 +1,25 @@
 document.getElementById('SwitchLang').addEventListener('click', function() {
     switchLanguage();
 });
+document.getElementById('PersoProjMenu').addEventListener('click',scrollToPerso)
+document.getElementById('CoopProjMenu').addEventListener('click',scrollToCoop)
+document.getElementById('menuArduino').addEventListener('click',scrollToArduino)
+document.getElementById('menuPython').addEventListener('click',scrollToPython)
+document.getElementById('menuModel').addEventListener('click',scrollToModel)
+document.getElementById('menuGNG').addEventListener('click',scrollToGNG)
+document.getElementById('menuCEGProj').addEventListener('click',scrollToCEGProj)
+document.getElementById('menuCreal').addEventListener('click',scrollToCreal)
+document.getElementById('menuJava').addEventListener('click',scrollToJava)
+
 const en={
     "Studies":"BASc Electrical Engineering and BSc Computing Technology student",
     "SwitchLang": "FR",
     "TitleProjects":"Projects",
     "PersoProjMenu":"Personal projects",
     "CoopProjMenu":"Cooperative projects",
-    "CEGProj":"Final CÉGEP project",
-    "Model":"3D modeling",
-    "Creal":"Creation club",
+    "menuCEGProj":"Final CÉGEP project",
+    "menuModel":"3D modeling",
+    "menuCreal":"Creation club",
     "GameinWatch":"Game & Watch-type game",
     "vga":"VGA animation using ",
     "soundTrap":"Audio message player using an SD card reader, a small speaker and a switch",
@@ -27,9 +37,9 @@ const fr={
     "TitleProjects":"Projets",
     "PersoProjMenu":"Projets personnels",
     "CoopProjMenu":"Projets coopératifs",
-    "CEGProj":"Projet final CÉGEP",
-    "Model":"Modélisation 3D",
-    "Creal": "Club de création" ,
+    "menuCEGProj":"Projet final CÉGEP",
+    "menuModel":"Modélisation 3D",
+    "menuCreal": "Club de création" ,
     "GameinWatch":"Jeu de type Game & Watch",
     "vga":"Animation VGA avec ",
     "soundTrap":"Lecteur de message audio activé par un interrupteur utilisant un lecteur de carte SD et un haut-parleur miniature",
@@ -54,4 +64,31 @@ function switchLanguage(){
             document.getElementById(key).innerText=en[key]
         } 
     }
+}
+function scrollToPerso(){
+    document.getElementById('PersProjectsSection').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToArduino(){
+    document.getElementById('Arduino').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToPython(){
+    document.getElementById('python').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToModel(){
+    document.getElementById('modeling').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToGNG(){
+    document.getElementById('').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToCEGProj(){
+    document.getElementById('').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToCreal(){
+    document.getElementById('').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToCoop(){
+    document.getElementById('').scrollIntoView({behavior: 'smooth'})
+}
+function scrollToJava(){
+    document.getElementById('JavaAndroid').scrollIntoView({behavior: 'smooth'})
 }
