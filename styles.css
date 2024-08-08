@@ -1,7 +1,8 @@
 body{
 	font-family:"consolas",sans-serif;
-	background-color: gray;
+	background-color: #0c0c0c;
 	margin:3px;
+	color:#16c60c;
 }
 #SwitchLang{
 	position: fixed;
@@ -16,7 +17,7 @@ body{
 #vga{
 	display: inline;
 }
-#arduinoContainer1 > * {
+#arduinoContainer1 > * {/*target direct children*/
 	width:50%;
 }
 #VGAContainer{
@@ -28,8 +29,25 @@ body{
 .chartsDesc{
 	display:inline;
 }
+#Studies{
+	text-align:center;
+	color:#16c60c;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 99.8%;
+	border-collapse: collapse;
+}
 th, td{
-	border: 1px solid black;
+	border: 0.2pc solid #0037da;
+	background-color: #330d0d;
+
+
+}
+th:hover,td:hover{
+	background-color: #c5101c;
+
 }
 img{
 	display: block;
@@ -39,6 +57,17 @@ img{
 	max-height: 100%;
 	/*object-fit: contain;*/
 }
+h1{
+	color:white;
+	margin-top: 1px;
+	margin-bottom:5pc;/*To leave place for the header GIF*/
+	font-size: 5pc;
+}
+h2{
+	color:#e95420;
+}
 h3{
+	color:#e95623;
 	clear:both;
+	text-align:center;
 }
