@@ -92,3 +92,20 @@ function scrollToCoop(){
 function scrollToJava(){
     document.getElementById('JavaAndroid').scrollIntoView({behavior: 'smooth'})
 }
+function type(targetID) {
+    const target = document.getElementById(targetID)
+    let index=0;
+    const text = target.innerText
+    target.innerText=""
+    function typeChar() {
+        if (index < text.length) {
+            target.innerHTML += text.charAt(index);
+            index++;
+            requestAnimationFrame(typeChar)
+        }
+    }
+
+    typeChar();
+}
+type('MainTitle')
+type('Studies')

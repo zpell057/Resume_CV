@@ -41,14 +41,14 @@
 				<p id="GameinWatch">Game & Watch-type game</p>
 				<img id="gameImg" src="game.gif">
 				<br>
-				<div id="arduinoContainer1">
-					<div id="VGAContainer">
+				<div id="arduinoContainer1" class="coupleContainer">
+					<div id="VGAContainer" class="leftContainer">
 						<p id="vga">VGA animation using</p> 
 						<a id="smaffer" href="https://github.com/smaffer/vgax/tree/master" target="_blank">Smaffer's VGAX library</a>
 						<br>
 						<img id="ScreenSaver" src="screenSaver.gif">
 					</div>
-					<div id="soundTrapContainer">
+					<div id="soundTrapContainer" class="rightContainer">
 						<p id="soundTrap">Audio message player using an SD card reader, a small speaker and a switch</p>
 						<img id="soundTrapImg" src="Sound_trap.jpg">
 					</div>
@@ -76,10 +76,14 @@
 			<div id="modeling">
 				<h3>3D</h3>
 				<p id="modelDesc">Various 3D modeling projects done in Fusion 360 and onshape. </p>
-				<img id="dorsalLamp" src="dorsalSupport.gif">
-				<img id="laser" src="laser.gif">
-				<img id="glassesCase" src="glassesCase.gif">
-				<img id="transmission" src="transmission.png">
+				<div class=coupleContainer>
+					<img id="dorsalLamp" class="leftContainer" src="dorsalSupport.gif">
+					<img id="laser" class="rightContainer" src="laser.gif">
+				</div>
+				<div class="coupleContainer">
+					<img id="glassesCase" class="leftContainer" src="glassesCase.gif">
+					<img id="transmission" class="rightContainer" src="transmission.png">
+				</div>
 				<p id="appleMouse">Old Apple computer mouse converted to optical and USB to be used on modern computers using the internals of a modern mouse.</p>
 				<img id="mouseIMG" src="mouseHQ.gif">
 			</div>

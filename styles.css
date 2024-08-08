@@ -17,15 +17,25 @@ body{
 #vga{
 	display: inline;
 }
-#arduinoContainer1 > * {/*target direct children*/
+
+.coupleContainer > * {
 	width:50%;
 }
-#VGAContainer{
+.leftContainer{
 	float:left;
 }
-#soundTrapContainer{
+.rightContainer{
 	float:right;
 }
+.leftContainer > p{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+.rightContainer > p{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+
 .chartsDesc{
 	display:inline;
 }
@@ -70,4 +80,7 @@ h3{
 	color:#e95623;
 	clear:both;
 	text-align:center;
+}
+p{
+	clear:both;
 }
