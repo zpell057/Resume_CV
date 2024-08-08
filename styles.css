@@ -8,6 +8,8 @@ body{
 	position: fixed;
 	top:1pc;
 	right:1pc;
+	font-size:0.9pc;
+	font-weight: 700;
 }
 #contacts{
 	position:absolute;
@@ -43,6 +45,39 @@ body{
 	text-align:center;
 	color:#16c60c;
 }
+#chartsDescDiv{
+	float:left;
+	width:30%;
+}
+#chartsGIF{
+	float:right;/*Works but ugly*/
+	width:70%;
+
+}
+#mouseIMG{
+	position: absolute;
+	right:0px;
+}
+#arduinoDesc{
+	margin:0px;
+	float:left;
+	width:30%;
+}
+#gameImg{
+	width:70%;
+
+}
+#arduinoContainer1{
+	clear:both;
+}
+#longAppDesc{
+	float:left;
+	width:30%;
+}
+#appGif{
+	height: fit-content;
+}
+
 table{
 	margin-left: auto;
 	margin-right: auto;

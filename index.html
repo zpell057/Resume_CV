@@ -39,7 +39,10 @@
 				<h3>Arduino</h3>
 				
 				<p id="GameinWatch">Game & Watch-type game</p>
-				<img id="gameImg" src="game.gif">
+				<div class="coupleContainer">
+					<p id="arduinoDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<img id="gameImg" src="game.gif">
+				</div>
 				<br>
 				<div id="arduinoContainer1" class="coupleContainer">
 					<div id="VGAContainer" class="leftContainer">
@@ -59,18 +62,24 @@
 			<div id="JavaAndroid"> 
 				<h3>Java + Android</h3>
 				<p id="appDesc">Arithmetic practice Android app developped in Java using Android Studio</p>
-				<img id="appGIF" src="app cropped.gif">
+				<div id="appContainer" class="coupleContainer">
+					<p id="longAppDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<img id="appGIF" src="app cropped.gif">
+				</div>
 			</div>
 			<div id="python">
 				<h3>Python</h3>
 				<br>
-				<p id="chartsDesc1" class="chartsDesc">Series of python programs made to edit a video compilation of all #1 songs on the canadian charts in a given decade. The data of what songs were #1 during what time was scraped off of wikipedia using </p>
-				<a id="pandas" href="https://pandas.pydata.org/" target="_blank">pandas</a>
-				<p id="chartsDesc2" class="chartsDesc">to then be searched and downloaded from Youtube using google cloud's Youtube Data API v3 and </p>
-				<a id="pytube" href="https://pytube.io/en/latest/" target="_blank">pytube</a>
-				<p id="chartsDesc3" class="chartsDesc">. The final video was then created by editing 10 second clips from each video and adding text showing info about the song with</p>
-				<a id="moviepy" href="https://zulko.github.io/moviepy/" target="_blank">moviepy.</a>
-				<br>
+				<div id="chartsDiv">
+				<div id="chartsDescDiv">
+					<p id="chartsDesc1" class="chartsDesc">Series of python programs made to edit a video compilation of all #1 songs on the canadian charts in a given decade. The data of what songs were #1 during what time was scraped off of wikipedia using </p>
+					<a id="pandas" href="https://pandas.pydata.org/" target="_blank">pandas</a>
+					<p id="chartsDesc2" class="chartsDesc">to then be searched and downloaded from Youtube using google cloud's Youtube Data API v3 and </p>
+					<a id="pytube" href="https://pytube.io/en/latest/" target="_blank">pytube</a>
+					<p id="chartsDesc3" class="chartsDesc">. The final video was then created by editing 10 second clips from each video and adding text showing info about the song with</p>
+					<a id="moviepy" href="https://zulko.github.io/moviepy/" target="_blank">moviepy.</a>
+				</div>
+				</div>
 				<img id="chartsGIF" src="charts.gif">
 			</div>
 			<div id="modeling">
@@ -85,7 +94,13 @@
 					<img id="transmission" class="rightContainer" src="transmission.png">
 				</div>
 				<p id="appleMouse">Old Apple computer mouse converted to optical and USB to be used on modern computers using the internals of a modern mouse.</p>
-				<img id="mouseIMG" src="mouseHQ.gif">
+				<div class="coupleContainer">
+					<div class="coupleContainer" class="leftContainer">
+						<img id="mouseOutsides" class="leftContainer" src="outside.jpg">
+						<img id="mouseInsides" class="rightContainer" src="mouseCropped.png">
+					</div>
+					<img id="mouseIMG" class="rightContainer" src="mouseHQ.gif">
+				</div>
 			</div>
 		</div>
 		<script src="scripts.js"></script>
