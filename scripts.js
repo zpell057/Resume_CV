@@ -1,15 +1,15 @@
 document.getElementById('SwitchLang').addEventListener('click', function() {
     switchLanguage();
 });
-document.getElementById('PersoProjMenu').addEventListener('click',scrollToPerso)
-document.getElementById('CoopProjMenu').addEventListener('click',scrollToCoop)
-document.getElementById('menuArduino').addEventListener('click',scrollToArduino)
-document.getElementById('menuPython').addEventListener('click',scrollToPython)
-document.getElementById('menuModel').addEventListener('click',scrollToModel)
-document.getElementById('menuGNG').addEventListener('click',scrollToGNG)
-document.getElementById('menuCEGProj').addEventListener('click',scrollToCEGProj)
-document.getElementById('menuCreal').addEventListener('click',scrollToCreal)
-document.getElementById('menuJava').addEventListener('click',scrollToJava)
+document.getElementById('PersoProjMenu').addEventListener('click',function(){scrollTo('PersProjectsSection');})
+document.getElementById('CoopProjMenu').addEventListener('click',function(){scrollTo('GNGtitle');})
+document.getElementById('menuArduino').addEventListener('click',function(){scrollTo('Arduino');})
+document.getElementById('menuPython').addEventListener('click',function(){scrollTo('pythonTitle');})
+document.getElementById('menuModel').addEventListener('click',function(){scrollTo('modelingTitle');})
+document.getElementById('menuGNG').addEventListener('click',function(){scrollTo('GNGtitle');})
+document.getElementById('menuCEGProj').addEventListener('click',function(){scrollTo('cegepTitle');})
+document.getElementById('menuCreal').addEventListener('click',function(){scrollTo('crealTitle');})
+document.getElementById('menuJava').addEventListener('click',function(){scrollTo('javaTitle');})
 
 const en={
     "Studies":"BASc Electrical Engineering and BSc Computing Technology student",
@@ -73,33 +73,10 @@ function switchLanguage(){
         } 
     }
 }
-function scrollToPerso(){
-    document.getElementById('PersProjectsSection').scrollIntoView({behavior: 'smooth'})
+function scrollTo(targetID){
+    document.getElementById(targetID).scrollIntoView({behavior:'smooth'})
 }
-function scrollToArduino(){
-    document.getElementById('Arduino').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToPython(){
-    document.getElementById('python').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToModel(){
-    document.getElementById('modeling').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToGNG(){
-    document.getElementById('').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToCEGProj(){
-    document.getElementById('').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToCreal(){
-    document.getElementById('').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToCoop(){
-    document.getElementById('').scrollIntoView({behavior: 'smooth'})
-}
-function scrollToJava(){
-    document.getElementById('JavaAndroid').scrollIntoView({behavior: 'smooth'})
-}
+
 function type(targetID) {
     const target = document.getElementById(targetID)
     let index=0;
