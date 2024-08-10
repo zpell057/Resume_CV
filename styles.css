@@ -4,6 +4,11 @@ body{
 	margin:3px;
 	color:#16c60c;
 }
+#header{
+	background-image:url("me.gif");
+	background-repeat: repeat-x;
+	background-size: contain;
+}
 #SwitchLang{
 	position: fixed;
 	top:1pc;
@@ -12,9 +17,11 @@ body{
 	font-weight: 700;
 }
 #contacts{
+	background-color: #0c0c0c;
 	position:absolute;
 	top:0.5pc;
 	right:3pc;
+	border:4px solid black;
 }
 #vga{
 	display: inline;
@@ -42,16 +49,26 @@ body{
 	display:inline;
 }
 #Studies{
-	text-align:center;
 	color:#16c60c;
+	background-color: #0c0c0c;
+	border:4px solid black;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+#MainTitle{
+	background-color: #0c0c0c;
+	border:4px solid black;
+	width: fit-content;
 }
 #chartsDescDiv{
 	float:left;
 	width:30%;
+	margin-left:3%;
 }
 #chartsGIF{
 	float:right;/*Works but ugly*/
-	width:70%;
+	width:67%;
 
 }
 #mouseIMG{
@@ -73,11 +90,18 @@ body{
 #longAppDesc{
 	float:left;
 	width:30%;
+	margin-left:5%;
 }
 #appGif{
 	height: fit-content;
 }
-
+#ScreenSaver{
+	width: 100%
+}
+.shortDesc{
+	font-size:1.4pc;
+	text-decoration: underline;
+}
 table{
 	margin-left: auto;
 	margin-right: auto;
@@ -115,7 +139,10 @@ h3{
 	color:#e95623;
 	clear:both;
 	text-align:center;
+	font-size: 2pc;
+	text-decoration: underline;
 }
 p{
 	clear:both;
+	font-size:1.3pc;
 }
