@@ -74,6 +74,7 @@ body{
 #mouseIMG{
 	position: absolute;
 	right:0px;
+	z-index: -1;
 }
 #arduinoDesc{
 	margin:0px;
