@@ -4,6 +4,40 @@ body{
 	margin:3px;
 	color:#16c60c;
 }
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+max-height: 100%;
+/*object-fit: contain;*/
+}
+th, td{
+	border: 0.2pc solid #0037da;
+	background-color: #330d0d;
+
+
+}
+h1{
+	color:white;
+	margin-top: 1px;
+	margin-bottom:5pc;/*To leave place for the header GIF*/
+	font-size: 5pc;
+}
+h2{
+	color:#e95420;
+}
+h3{
+	color:#e95623;
+	clear:both;
+	text-align:center;
+	font-size: 2pc;
+	text-decoration: underline;
+}
+p{
+	clear:both;
+	font-size:1.3pc;
+}
 #header{
 	background-image:url("me.gif");
 	background-repeat: repeat-x;
@@ -16,6 +50,8 @@ body{
 	font-size:0.9pc;
 	font-weight: 700;
 }
+
+@media only screen and (min-width: 700px){
 #contacts{
 	background-color: #0c0c0c;
 	position:absolute;
@@ -109,41 +145,38 @@ table{
 	width: 99.8%;
 	border-collapse: collapse;
 }
-th, td{
-	border: 0.2pc solid #0037da;
-	background-color: #330d0d;
 
-
-}
 th:hover,td:hover{
 	background-color: #c5101c;
 
 }
-img{
-	display: block;
+}/*end of desktop*/
+@media only screen and (max-width: 699px){
+
+	#MainTitle{
+		text-shadow: 
+                -2px -2px 0 #0c0c0c,  
+                 2px -2px 0 #0c0c0c,
+                -2px  2px 0 #0c0c0c,
+                 2px  2px 0 #0c0c0c;
+		font-size: 3pc;
+	}
+	#Studies{
+		text-shadow: 
+            -2px -2px 0 #0c0c0c,  
+             2px -2px 0 #0c0c0c,
+            -2px  2px 0 #0c0c0c,
+             2px  2px 0 #0c0c0c;
+	}
+	th, td{
+	border: 0.2pc solid #0037da;
+	background-color: #330d0d;
+	}
+	table{
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 100%;
-	max-height: 100%;
-	/*object-fit: contain;*/
+	width: 99.8%;
+	border-collapse: collapse;
+	margin-bottom: 3px;
 }
-h1{
-	color:white;
-	margin-top: 1px;
-	margin-bottom:5pc;/*To leave place for the header GIF*/
-	font-size: 5pc;
-}
-h2{
-	color:#e95420;
-}
-h3{
-	color:#e95623;
-	clear:both;
-	text-align:center;
-	font-size: 2pc;
-	text-decoration: underline;
-}
-p{
-	clear:both;
-	font-size:1.3pc;
 }
