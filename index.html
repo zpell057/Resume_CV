@@ -19,9 +19,10 @@
 			<div class="coupleContainer">
 			<table id="menuPerso" class="leftContainer">
 				<tr>
-					<th id="PersoProjMenu" colspan="4">Personal projects</th>
+					<th id="PersoProjMenu" colspan="5">Personal projects</th>
 				</tr>
 				<tr>
+					<td id="menuCircuitDesign">Circuit design</td>
 					<td id="menuArduino">Arduino</td>
 					<td id="menuJava">Java</td>
 					<td id="menuPython">Python</td>
@@ -33,7 +34,7 @@
 					<th id="CoopProjMenu" colspan="3">Cooperative projects</th>
 				</tr>
 				<tr>
-					<td id=menuGNG>GNG 1103/1503</td>
+					<td id="menuGNG">GNG projects</td>
 					<td id="menuCEGProj">Final CÉGEP project</td>
 					<td id="menuCreal">Creation club</td>
 				</tr>
@@ -42,9 +43,32 @@
 			<hr>
 		</div>
 		<div id="PersProjectsSection">
-			<div id="Arduino"> 
-				<h3>Arduino</h3>
-				
+			<div id="circuitDesignSection">
+				<h3 id="circuitDesignTitle">Circuit design</h3>
+				<p id="ps2ShortDesc" class="shortDesc">PS/2 keyboard decoder</p>
+				<p id="ps2Desc">To experiment with CPLDs and logic design, I designed a hexadecimal decoder for PS/2 keyboards. I did so with simple components that could be bought on a chip and assembled onto a breadboard, like registers, demultiplexers and a hexadecimal counter. This was made in a Quartus prime as a block diagram circuit and uploaded onto an Altera MAX II CPLD development board. The output of the circuit (the hex code of the key) was displayed on a seven-segment display module that I made myself from repurposed components.</p>
+				<div id="ps2ImagesContainer" class="coupleContainer">
+					<img id="ps2Images" class="leftContainer" src="ps2.gif">
+					<img id="KeyDiagImage" class="rightContainer" src="KeyDiag.png">
+				</div>
+			</div>
+			<div id="Arduino">
+				<h3 id="arduinoTitle">Arduino</h3>
+				<p id="oscilloscopeShortDesc" class="shortDesc">Oscilloscope drawings</p>
+				<p id="oscilloscopeDesc">As part of this short project, I made a software and hardware solution to make drawings on an oscilloscope in x/y mode.
+					<br>
+					The hardware implemented was two 4-bit digital-to-analog converters (DAC) implemented with a R-2R resistive circuit allowing to have 16 voltage values as output. The 4 inputs of these DACs are connected to an Arduino uno which iterates over the x/y coordinates to light up represented by nibbles.
+					<br>
+					The Arduino code iterates over the coordinates that are contained in a header named pointValues.h containing the drawing’s data.
+					<br>
+					To make the header for a drawing, I made a program in Java that lets the user make a drawing  with his mouse which will be automatically converted into a pointValues.h file that can be compiled an uploaded to the Arduino board to display the drawing on the oscilloscope.
+					<br>
+					This is the program I used to make my current profile picture.
+				</p>
+				<div id="oscilloscopeImagesContainer" class="coupleContainer">
+					<img id="softwareOscilloscope" class="leftContainer" src="softwareOscilloscope.gif">
+					<img id="oscilloscopeDemo" class="rightContainer" src="demoOscilloscope.gif">
+				</div>
 				<p id="GameinWatch" class="shortDesc">Game & Watch-type game</p>
 				<div class="coupleContainer">
 					<p id="arduinoDesc">Arduino projects are some of my favorites, because they let me combine my interests in software and hardware development. <br> The GIF to the right presents a game that I have made where the player sorts alphabetically a randomly generated array of numbers using a controller made from repurposed keyboard switches (from the keyboard I am playing with in the header).<br> In the next projects I have made an infinitely looping animation for VGA monitors and a device that plays a sound from an SD card when a switch is opened.</p>
@@ -68,6 +92,16 @@
 			</div>
 			<div id="JavaAndroid"> 
 				<h3 id="javaTitle">Java + Android</h3>
+				<p id="segShortDesc" class="shortDesc">SEG 2105 PC Building App</p>
+				<div id="segContainer" class="coupleContainer">
+					<p id="segDesc" class="rightContainer">As part of the SEG 2105 course, we had to build an Android application capable of managing the inventory and ordering system of a fictional computer manufacturer. The project was carried out by a team of four of which I was the manager.
+						<br>
+						The Android application was written in Java and was linked to a Firebase real-time database, which was my first experience with databases.
+						<br>
+						As team manager, I was also responsible for integrating my colleagues’ branches into the main branch of the Git repository of the project by resolving conflicts, testing and correcting implementation defects.
+					</p>
+					<img id="segDemo" class="leftContainer" src="SEGApp.gif">
+				</div>
 				<p id="appDesc" class="shortDesc">Arithmetic practice Android app developped in Java using Android Studio</p>
 				<div id="appContainer" class="coupleContainer">
 					<p id="longAppDesc">I have learned Java in one of my first year university courses. Being an android user and knowing that android apps run on the JVM, I wanted to apply the theoretical knowledge from this course for a project. I therefore decided to make an app inspired by Texas Instruments' Little Professor toy. <br> With the help of an online course, I easily translated that knowledge to real-life use.</p>
@@ -77,7 +111,14 @@
 			<div id="python">
 				<h3 id="pythonTitle">Python</h3>
 				<br>
+				<div id="boucleContainer">
+					<p id="boucleShortDesc" class="shortDesc">Loop creation software for Hack the Hill II hackathon</p>
+					<p id="boucleDesc">For the general category of the 2024 Hack the Hill II hackathon, I built a program in python that, when given a point location and a target distance, would generate a loop for the user to walk or run. The program aimed to help people be more active despite decision fatigue. The algorithm that I built for the program optimised the loop for safety and for enjoyability, by prioritising pedestrian paths and smaller streets where the speed limits are slower.
+					<br> I built the integrity of this program on my own by using common shortest path graph algorithms and had a lot of fun presenting the project to other programmers.</p>
+					<img id="boucleGif" src="demoBouclé.gif">
+				</div>
 				<div id="chartsDiv">
+					<p id="chartsTitle" class="shortDesc">Charts compilation</p>
 				<div id="chartsDescDiv">
 					<p id="chartsDesc1" class="chartsDesc">Series of python programs made to edit a video compilation of all #1 songs on the canadian charts in a given decade. The data of what songs were #1 during what time was scraped off of wikipedia using </p>
 					<a id="pandas" href="https://pandas.pydata.org/" target="_blank">pandas</a>
@@ -111,6 +152,18 @@
 			</div>
 		</div>
 		<div id="coopProjects">
+			<div id="GNG2">
+				<h3 id="GNG2Title">GNG 2101/2501</h3>
+				<div id="gng2Div">
+					<p id="gng2Desc" class="rightContainer">GNG 2101 is a second year engineering class where teams of five students are paired with a client for whom they must create an accessible solution that empowers clients by increasing their independence.<br>
+					Our client was a youtuber with cerebral palsy who wanted a gimbal-style camera support that they could move by pressing buttons on the head array they use daily to move their wheelchair.<br>
+					As the team manager, I contributed to the team by organizing the work of my teammates and managing deadlines, which was greatly appreciated by my peers.<br>
+					I also designed, soldered, assembled and programmed the electronic system of the product, which consisted of stepper motors that moved the camera, which were controlled by an Arduino that detected which button was pressed on the client's head array through a simple analog circuit incorporating photoresistors.<br>
+					At the end of the semester, our team placed first in our section in the university's Design Day competition, earning a perfect score from our judges.<br>
+					</p>
+				</div>
+				<img id="headArrayGif" src="headArrayDemo.gif">
+			</div>
 			<div id="GNG">
 				<h3 id="GNGtitle">GNG 1103/1503</h3>
 				<div class="coupleContainer">

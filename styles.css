@@ -37,6 +37,7 @@ h3{
 p{
 	clear:both;
 	font-size:1.3pc;
+	line-height:130%;
 }
 #header{
 	background-image:url("me.gif");
@@ -97,15 +98,29 @@ p{
 	border:4px solid black;
 	width: fit-content;
 }
+
 #chartsDescDiv{
+
 	float:left;
-	width:30%;
+	width:27%;
 	margin-left:3%;
+	clear:both;
 }
 #chartsGIF{
 	float:right;/*Works but ugly*/
 	width:67%;
 
+}
+#boucleDesc{
+	float:right;
+	width:30%;
+	margin-right:3%;
+	margin-left:3%;
+}
+#boucleGif{
+
+	float:left;
+	width:64%;
 }
 #mouseIMG{
 	position: absolute;
@@ -131,6 +146,17 @@ p{
 }
 #appGif{
 	height: fit-content;
+}
+#gng2Div{
+	float:right;
+	width:64%;
+	margin-right:3%;
+	margin-left: 3%;
+}
+#headArrayGif{
+	float:left;
+	width:27%;
+	margin-left:3%;
 }
 #ScreenSaver{
 	width: 100%
