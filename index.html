@@ -5,14 +5,13 @@
 		<meta name="viewport" content ="width=device-width,initial-scale=1">
 		<title>Zachary Pelletier</title>
 		<link rel="stylesheet" href = "styles.css">
+		<link rel="icon" type="image/png" href="favicon.png">
 	</head>
 	<body>
 		<div id="header">
 			<h1 id="MainTitle">Zachary Pelletier</h1>
 			<h2 id="Studies">BASc Electrical Engineering and BSc Computing Technology student</h2>
-			<div id="contacts">E-mail: <br> zpell057@uottawa.ca <br>
-			<a href="CV génie EN - Stripped20240911.pdf" target="_blank" rel="noopener noreferrer">Resume (EN)</a> / <a href="CV génie FR - Stripped20240911.pdf" target="_blank" rel="noopener noreferrer">CV (FR)</a>
-			</div>
+			<div id="contacts">E-mail: <br> zpell057@uottawa.ca</div>
 			<button id="SwitchLang">FR</button>
 			<hr>
 			<h2 id="TitleProjects">Projects</h2>
@@ -31,9 +30,10 @@
 			</table>
 			<table id="menuCoop" class="rightContainer">
 				<tr>
-					<th id="CoopProjMenu" colspan="3">Cooperative projects</th>
+					<th id="CoopProjMenu" colspan="4">Cooperative projects</th>
 				</tr>
 				<tr>
+					<td id="menuHackathons">Hackathon projects</td>
 					<td id="menuGNG">GNG projects</td>
 					<td id="menuCEGProj">Final CÉGEP project</td>
 					<td id="menuCreal">Creation club</td>
@@ -162,6 +162,13 @@
 			</div>
 		</div>
 		<div id="coopProjects">
+			<div id="Hack1">
+				<h3 id="Hack1Title">uOttaHack 2025</h3>
+				<div class="coupleContainer">
+					<p id="Hack1Desc" class="leftContainer">As part of the 2025 uOttaHack hackathon, I collaborated with my software developer friend to build a Hardware-Software solution to assist hearing-impaired users in feeling music through vibrations. <br>Over the weekend, my friend built the software, a web-app with an aesthetic user interface that communicates with Spotify’s API to provide music recommendations to the user.<br>I designed the hardware part of the solution with the ESP-32 modules that were provided by Seeed Studio, a sponsor of the event. The solution used a relay connected to a switching BJT transistor circuit to allow the microcontroller to output vibrations to the user through the clicking of the relay. The microcontroller took the output of the on-board microphone and performed a Fast Fourier Analysis algorithm on the audio signal. I then made a custom algorithm to translate the frequencies form the Fourier Analysis to lower frequencies in the relay.<br></p>
+					<img id="Hack1Img" class="rightContainer" src="Hack1Img.png">
+				</div>
+			</div>
 			<div id="GNG2">
 				<h3 id="GNG2Title">GNG 2101/2501</h3>
 				<div id="gng2Div">
